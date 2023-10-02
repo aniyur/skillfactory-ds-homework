@@ -80,7 +80,7 @@ https://colab.research.google.com/github/aniyur/skillfactory-ds-homework/blob/ma
 :arrow_up: [к оглавлению](#оглавление)
 
 
-### Выводы:  
+### Выводы
 
 Программа угадывает число менее чем за 20 попыток, цель достигнута.
 
