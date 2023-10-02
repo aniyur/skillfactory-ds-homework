@@ -1,7 +1,9 @@
-# My Data Science Projects
+# Учебные проекты по наукам о данных
 
-From the [Master's in Data Science program from MIPT and Skillfactory](https://new.skillfactory.ru/data-science-machine-learning-mipt)
+Данный репозиторий содержит работы, выполненные в рамках обучения
+на магистерской программе ["Науки о данных" от МФТИ и Skillfactory](
+https://new.skillfactory.ru/data-science-machine-learning-mipt).
 
-## Проекты
+## Содержание
 
-* [Проект 0. Игра: Угадай число](./project_0/README.md)
+* [Проект 0. Игра "Угадай число"](./project_0/README.md)
