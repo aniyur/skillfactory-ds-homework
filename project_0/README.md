@@ -18,6 +18,10 @@
 Для установки зависимостей (`pip install -r requirements.txt`)
 требуется `python >= 3.9`.
 
+Решение оформлено в виде [jupyter-ноутбука](
+https://colab.research.google.com/github/aniyur/skillfactory-ds-homework/blob/main/project_0/guess_number_game.ipynb)
+для облегчения восприятия.
+
 :arrow_up: [к оглавлению](#оглавление)
 
 
