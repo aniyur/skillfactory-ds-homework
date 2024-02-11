@@ -1,0 +1,122 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+enum gender {
+  F
+  Femal
+  Female
+  M
+  Male
+  U
+}
+
+enum job_industry_category {
+  Argiculture
+  Entertainment
+  "Financial Services"
+  Health
+  IT
+  Manufacturing
+  "n/a"
+  Property
+  Retail
+  Telecommunications
+}
+
+enum wealth_segment {
+  "Affluent Customer"
+  "High Net Worth"
+  "Mass Customer"
+}
+
+enum state {
+  "New South Wales"
+  NSW
+  QLD
+  Victoria
+  VIC
+}
+
+enum country {
+  Australia
+}
+
+enum brand {
+  "Giant Bicycles"
+  "Norco Bicycles"
+  "OHM Cycles"
+  Solex
+  "Trek Bicycles"
+  WeareA2B
+}
+
+enum product_line {
+  Mountain
+  Road
+  Standard
+  Touring
+}
+
+enum product_class {
+  high
+  low
+  medium
+}
+
+enum product_size {
+  large
+  medium
+  small
+}
+
+enum order_status {
+  Approved
+  Cancelled
+}
+
+Table customers {
+  customer_id integer [primary key]
+  first_name varchar
+  last_name varchar
+  gender gender
+  DOB date
+  job_title varchar
+  job_industry_category job_industry_category
+  wealth_segment wealth_segment
+  deceased_indicator boolean
+  owns_car boolean
+  address varchar
+  postcode integer
+  state state
+  country country [note: 'Предположим, что клиенты могут быть и из других стран']
+  property_valuation smallint
+}
+
+Table items {
+  item_id integer [primary key]
+  brand brand
+  product_line product_line
+  product_class product_class
+  product_size product_size
+}
+
+Table offers {
+  offer_id integer [primary key]
+  item_id integer
+  product_id integer
+  standard_cost decimal(11, 7)
+  transaction_date date
+}
+
+Table transactions {
+  transaction_id integer [primary key]
+  customer_id integer
+  offer_id integer
+  online_order boolean
+  order_status order_status
+  list_price decimal(6, 2)
+}
+
+Ref: transactions.customer_id > customers.customer_id // many-to-one
+Ref: transactions.offer_id > offers.offer_id // many-to-one
+Ref: offers.item_id > items.item_id // many-to-one
