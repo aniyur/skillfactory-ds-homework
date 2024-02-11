@@ -34,6 +34,7 @@
 [SQL-script](./Anisimov_Y_S_insertion.sql)  
 
 [скрин customers](./Anisimov_Y_S_customers.png)  
+[скрин customers (продолжение)](./Anisimov_Y_S_customers2.png)  
 [скрин transactions](./Anisimov_Y_S_transactions.png)  
 [скрин items](./Anisimov_Y_S_items.png)  
 [скрин offers](./Anisimov_Y_S_offers.png)  
