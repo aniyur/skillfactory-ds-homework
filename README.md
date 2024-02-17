@@ -7,3 +7,6 @@ https://new.skillfactory.ru/data-science-machine-learning-mipt).
 ## Содержание
 
 * [Проект 0. Игра "Угадай число"](./project_0/README.md)
+* [Проект 1. Анализ резюме из HeadHunter](./project_1/README.md)
+* [Проект 2. Системы хранения и обработки данных / Домашнее задание 1](./project_2/README.md)
+* [Проект 3. Системы хранения и обработки данных / Домашнее задание 2](./project_3/README.md)
